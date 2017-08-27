@@ -30,9 +30,6 @@ var bio = {
 		var formattedLocation = HTMLlocation.replace("%data%", this.contact.location);
 		$('#topContacts').append(formattedLocation);
 
-		var formattedLocation = HTMLlocation.replace("%data%", this.contact.location);
-		$('#topContacts').append(formattedLocation);
-
 		$('#footerContacts').append(formattedMobile);
 		$('#footerContacts').append(formattedEmail);
 		$('#footerContacts').append(formattedGithub);
@@ -93,7 +90,7 @@ var education = {
 			var formattedName = HTMLschoolName.replace('%data%', school.name);
 			formattedName = formattedName.replace('#', school.url);
 			var formattedDegree = HTMLschoolDegree.replace('%data%', school.degree);
-			formattedName += formattedDegree
+			formattedName += formattedDegree;
 			$('#education').append(formattedName);
 			var formattedLocation = HTMLschoolLocation.replace('%data%', school.location);
 			$('#education').append(formattedLocation);
@@ -112,7 +109,7 @@ var education = {
 			var formattedSchoolName = HTMLonlineSchool.replace('%data%', onlineCourse.school);
 			var formattedName = HTMLonlineTitle.replace('%data%', onlineCourse.name);
 			formattedName = formattedName.replace('#', onlineCourse.url);
-			formattedName += formattedSchoolName
+			formattedName += formattedSchoolName;
 			$('#education').append(formattedName);
 			var formattedDates = HTMLonlineDates.replace('%data%', onlineCourse.dates);
 			$('#education').append(formattedDates);
